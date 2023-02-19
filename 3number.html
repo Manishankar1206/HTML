@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script type="text/JavaScript">
+            function calc() {
+                var a,b,c;
+                a=parseInt(document.getElementById("a").value);
+                b=parseInt(document.getElementById("b").value);
+                c=parseInt(document.getElementById("c").value);
+                if(a>b && a>c) {
+                document.write(a+" is greater"); 
+            } 
+            else if(b>a && b>c) {
+                document.write(b+" is greater"); 
+            } 
+            else {
+                document.write(c+" is greater"); 
+            }
+            
+                
+                
+                
+            }
+
+        </script>
+
+    </head>
+    <body> <center>
+        <h1>Calculation</h1><br>
+        Enter Number 1: <input type="number" id="a"><br><br>
+        Enter Number 2: <input type="number" id="b"><br><br>
+        Enter Number 3: <input type="number" id="c"><br><br>
+<P id="ans"></P>
+
+        <input type="button" Value="Click" onclick="calc()"/>
+</center>    
+    </body>
+</html>
